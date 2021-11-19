@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.privat.nokri.MainActivity">
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="?actionBarSize">
+
+          <LinearLayout
+
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+              <TextView
+                  android:layout_margin="5dp"
+                  android:id="@+id/textv"
+                  android:textColor="@android:color/white"
+                  android:textSize="18dp"
+                  android:text="@string/app_name"
+                  android:layout_width="250dp"
+                  android:layout_height="wrap_content">
+
+              </TextView>
+          </LinearLayout>
+<LinearLayout
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_margin="15dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/btnprev"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:id="@+id/btnnext"
+            android:src="@drawable/ic_arrow_forward_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+    </RelativeLayout>
+
+</LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+
+                    android:id="@+id/websitePullToRefresh"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent">
+
+                    <WebView
+                        android:id="@+id/myWebView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+
+
+
+                </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+            </RelativeLayout>
+
+
+            <com.google.android.gms.ads.AdView
+
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-5981443664978235/3183010071">
+            </com.google.android.gms.ads.AdView>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>
